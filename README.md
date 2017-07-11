@@ -65,7 +65,7 @@ To begin writing your own code using the c-boil boilerplate do the following:
 
 		cboil -> derp
 		cb_ -> derp_
-		CD_ -> DERP_
+		CB_ -> DERP_
 
 5. Update the section of the CMakeLists.txt file to point at the new source files renamed in step 3 above.
 
@@ -77,11 +77,11 @@ To begin writing your own code using the c-boil boilerplate do the following:
 
 6. Apply the changes that you made in step 4 above to macro names in the following files:
 
-		# src/meta.h
+		# src/meta/meta.h
 		cb_* -> derp_*
-		# src/meta.h.in
+		# src/meta/meta.h.in
 		cb_* -> derp_*
-		# src/util.c
+		# src/util/util.c
 		cb_* -> derp_*
 
 7. Change the following include statements:
@@ -90,7 +90,7 @@ To begin writing your own code using the c-boil boilerplate do the following:
 		#include "cb.h" -> #include "derp.h"
 		# src/util/util.c line 14
 		#include "../cb.h" -> #include "../derp.h"
-		# src/skeleton/skeleton.c line 10
+		# src/skeleton/skeleton.h line 10
 		#include "../cb.h" -> #include "../derp.h"
 
 8. Look through the source files included in the `src` directory, In each file, make sure the instances of the string "C-Boil" are changed in comments.
