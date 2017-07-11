@@ -19,8 +19,8 @@ Search for the cmake package using your package manager of choice or go to the C
 
 1. Clone the c-boil project:
 
-	git clone https://github.com/kalenanson/c-boil yourProjectDirectory
-	cd yourProjectDirectory
+		git clone https://github.com/kalenanson/c-boil yourProjectDirectory
+		cd yourProjectDirectory
 
 2. At this point you can build the code as-is for a simple hello world example.
 
