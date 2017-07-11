@@ -20,7 +20,7 @@ void
 usage(char **argv)
 {
 	fprintf(stderr, "c-boil usage:\n");
-	fprintf(stderr, "\t%s [-vcs] [config_file]\n", argv[0]);
+	fprintf(stderr, "\t%s [-vhf] [config_file]\n", argv[0]);
 }
 void
 version(char **argv)
