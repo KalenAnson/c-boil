@@ -56,8 +56,8 @@ To begin writing your own code using the c-boil boilerplate do the following:
 
 3. Rename the following files, here I am using the new project name 'derp'
 
-		mv src/cb.c derp.c
-		mv src/cb derp.h
+		mv src/cb.c src/derp.c
+		mv src/cb.h src/derp.h
 		mv config/cboil.ini config/derp.ini
 		mv config/cboil.log config/derp.log
 
