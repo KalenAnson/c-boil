@@ -1,0 +1,6 @@
+/*\
+|*| C-Boil
+|*| Cmake dynamic configure file
+\*/
+#cmakedefine CB_DEBUG_MODE
+#cmakedefine CB_D_VARIABLE "@CB_DYNAMIC_VARIABLE@"

@@ -1,0 +1,7 @@
+/*\
+|*| C-Boil
+|*| CMake Meta Variables
+\*/
+#define cb_VERSION_MAJOR @cb_VERSION_MAJOR@
+#define cb_VERSION_MINOR @cb_VERSION_MINOR@
+#define cb_VERSION_HOTFX @cb_VERSION_HOTFX@
