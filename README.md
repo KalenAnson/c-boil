@@ -5,7 +5,7 @@ Includes the requisite boilerplate code for getting a C project up and running u
 
 The sample code should compile and run and provides the basic scaffolding needed to process command line arguments and structure a project.
 
-## Dependancies
+## Dependencies
 c-boil uses CMake as its build system. CMake can build for a wide variety of target systems including UNIX, Linux, OSX, and Windows. You might need to install cmake on your system:
 
 ### Debian / Ubuntu
