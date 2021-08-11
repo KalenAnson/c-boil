@@ -140,7 +140,7 @@ else
 	sed -i "s/cb_/${target}_/g" src/meta/meta.h.in
 	sed -i "s/cb_/${target}_/g" src/util/util.c
 	sed -i "s/cb\.h/${project_name}\.h/g" "src/${project_name}.c"
-	sed -i "s/cb\.h/${project_name}\.h/g" "src/util/util.h"
+	sed -i "s/cb\.h/${project_name}\.h/g" "src/util/util.c"
 	sed -i "s/cb\.h/${project_name}\.h/g" "src/skeleton/skeleton.h"
 	find . -type f -exec sed -i "s/C-Boil/${project_name}/g" {} +
 	find . -type f -exec sed -i "s/c-boil/${project_name}/g" {} +
