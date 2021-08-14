@@ -140,6 +140,7 @@ add_executable(cboil)
 add_subdirectory(src)
 add_subdirectory(src/util)
 add_subdirectory(src/skeleton)
+#ADD_SUB_DIRS <- Do not delete this line
 ################################################################################
 # Linked Libraries
 ################################################################################
