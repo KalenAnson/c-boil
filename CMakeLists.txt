@@ -92,15 +92,54 @@ if (LINUX)
 else ()
 	add_definitions(-std=c11)
 endif ()
+add_compile_options(
+	-Werror
+	-Wall
+	-Wextra
+	-pedantic-errors
+	-Wformat=2
+	-Wno-import
+	-Wimplicit
+	-Wmain
+	-Wchar-subscripts
+	-Wsequence-point
+	-Wmissing-braces
+	-Wparentheses
+	-Winit-self
+	-Wswitch-enum
+	-Wstrict-aliasing=2
+	-Wundef
+	-Wshadow
+	-Wpointer-arith
+	-Wbad-function-cast
+	-Wcast-qual
+	-Wcast-align
+	-Wstrict-prototypes
+	-Wold-style-definition
+	-Wmissing-prototypes
+	-Wmissing-declarations
+	-Wredundant-decls
+	-Wnested-externs
+	-Winline
+	-Wdisabled-optimization
+	-Wunused-macros
+	-Wwrite-strings
+	-Wmemset-elt-size
+#	-Wunused-variable
+	-Wno-unused
+)
 ################################################################################
 # Source Files
-# Update this section with new source files as they are added to the project
+# add_executable needs to be before including directories which will provide
+# target_sources() calls which will add other files.
+# Add additional directories (which will provide their own CMakeLists files)
+# below with add_subdirectory() calls.
+# This allows dynamic preprocessor source file inclusion.
 ################################################################################
-add_executable(cboil
-	src/cb.c
-	src/util/util.c
-	src/skeleton/skeleton.c
-)
+add_executable(cboil)
+add_subdirectory(src)
+add_subdirectory(src/util)
+add_subdirectory(src/skeleton)
 ################################################################################
 # Linked Libraries
 ################################################################################

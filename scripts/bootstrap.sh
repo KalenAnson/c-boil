@@ -131,6 +131,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 	find . -type f -exec sed -i '' -e "s/C-Boil/${project_name}/g" {} +
 	find . -type f -exec sed -i '' -e "s/c-boil/${project_name}/g" {} +
 	find . -type f -exec sed -i '' -e "s/CB_/${macro}_/g" {} +
+	find src/ -type f -name CMakeLists.txt -exec sed -i '' -e "s/cboil/${target}/g" {} +
 else
 	sed -i -e "s/cboil/${target}/g" \
 		-e "s/cb_/${target}_/g" \
@@ -145,6 +146,7 @@ else
 	find . -type f -exec sed -i "s/C-Boil/${project_name}/g" {} +
 	find . -type f -exec sed -i "s/c-boil/${project_name}/g" {} +
 	find . -type f -exec sed -i "s/CB_/${macro}_/g" {} +
+	find src/ -type f -name CMakeLists.txt -exec sed -i -e "s/cboil/${target}/g" {} +
 fi
 echo "Bootstrapping complete"
 exit 0
